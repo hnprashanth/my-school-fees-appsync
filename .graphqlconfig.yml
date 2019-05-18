@@ -1,0 +1,16 @@
+projects:
+  myschoolfees:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        graphQLApiId: jz2kpxmwafbbbl47cm553y6jlq
+      endpoints:
+        prod: >-
+          https://tddjlhxsk5cv3puvaxmjuwjvbe.appsync-api.ap-south-1.amazonaws.com/graphql
