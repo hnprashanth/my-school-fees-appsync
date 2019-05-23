@@ -1,8 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Amplify, { Auth } from "aws-amplify";
+import awsmobile from "./aws-exports";
+import { withOAuth } from "aws-amplify-react";
+import Login from "./components/Login";
 
-function App() {
+Amplify.configure(awsmobile);
+
+const oauth = {
+  domain: "my-school-fees.auth.ap-south-1.amazoncognito.com",
+  scope: ["email", "public_profile"],
+  redirectSignIn: "http://localhost:3000",
+  redirectSignOut: "http://localhost:3000",
+  responseType: "code" // or token
+};
+
+Auth.configure({ oauth });
+
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +34,10 @@ function App() {
         >
           Learn React
         </a>
+        <Login />
       </header>
     </div>
   );
 }
 
-export default App;
+export default withOAuth(App);
