@@ -1,20 +1,19 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "my-school-fees-20190517225751-authRole",
-            "UnauthRoleArn": "arn:aws:iam::701528175564:role/my-school-fees-20190517225751-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::701528175564:role/my-school-fees-20190517225751-authRole",
+            "AuthRoleName": "my-school-fees-dev-20190524093741-authRole",
+            "UnauthRoleArn": "arn:aws:iam::003780799969:role/my-school-fees-dev-20190524093741-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::003780799969:role/my-school-fees-dev-20190524093741-authRole",
             "Region": "ap-south-1",
-            "DeploymentBucketName": "my-school-fees-20190517225751-deployment",
-            "UnauthRoleName": "my-school-fees-20190517225751-unauthRole",
-            "StackName": "my-school-fees-20190517225751",
-            "StackId": "arn:aws:cloudformation:ap-south-1:701528175564:stack/my-school-fees-20190517225751/19100270-78c9-11e9-a72d-029e9c0f3f8e"
+            "DeploymentBucketName": "my-school-fees-dev-20190524093741-deployment",
+            "UnauthRoleName": "my-school-fees-dev-20190524093741-unauthRole",
+            "StackName": "my-school-fees-dev-20190524093741",
+            "StackId": "arn:aws:cloudformation:ap-south-1:003780799969:stack/my-school-fees-dev-20190524093741/78351230-7dd9-11e9-bca7-06c541265f78"
         },
         "categories": {
             "auth": {
-                "myschoolfees": {
-                    "facebookAppId": "411995699383682",
-                    "googleClientId": "170206853685-ceruuigrerpkrod7id7cotapdd229mhf.apps.googleusercontent.com"
+                "myschoolfees25377305": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"411995699383682\",\"client_secret\":\"b0bee1e18bacc6ef96f8cd88d12fefe9\"},{\"ProviderName\":\"Google\",\"client_id\":\"170206853685-ceruuigrerpkrod7id7cotapdd229mhf.apps.googleusercontent.com\",\"client_secret\":\"Nlfo-c8wlomCJBdXCi5SePVK\"}]"
                 }
             }
         }

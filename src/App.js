@@ -1,22 +1,22 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Amplify, { Auth } from "aws-amplify";
+import Amplify from "aws-amplify";
 import awsmobile from "./aws-exports";
 import { withOAuth } from "aws-amplify-react";
 import Login from "./components/Login";
 
 Amplify.configure(awsmobile);
 
-const oauth = {
-  domain: "my-school-fees.auth.ap-south-1.amazoncognito.com",
-  scope: ["email", "public_profile"],
-  redirectSignIn: "http://localhost:3000",
-  redirectSignOut: "http://localhost:3000",
-  responseType: "code" // or token
-};
+// const oauth = {
+//   domain: "my-school-fees.auth.ap-south-1.amazoncognito.com",
+//   scope: ["email", "public_profile"],
+//   redirectSignIn: "http://localhost:3000",
+//   redirectSignOut: "http://localhost:3000",
+//   responseType: "code" // or token
+// };
 
-Auth.configure({ oauth });
+// Auth.configure({ oauth });
 
 function App(props) {
   return (
