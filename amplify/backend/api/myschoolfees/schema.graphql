@@ -16,6 +16,7 @@ type Fee @model {
   annual_fee: Float
   up_votes: Int
   down_votes: Int
+  user_id: String!
 }
 
 type UserVotes @model {

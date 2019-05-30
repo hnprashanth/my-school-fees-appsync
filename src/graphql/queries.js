@@ -17,6 +17,7 @@ export const getSchool = `query GetSchool($id: ID!) {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -64,6 +65,7 @@ export const getFee = `query GetFee($id: ID!) {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;
@@ -84,6 +86,7 @@ export const listFees = `query ListFees($filter: ModelFeeFilterInput, $limit: In
       annual_fee
       up_votes
       down_votes
+      user_id
     }
     nextToken
   }

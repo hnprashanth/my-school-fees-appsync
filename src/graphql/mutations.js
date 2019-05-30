@@ -17,6 +17,7 @@ export const createSchool = `mutation CreateSchool($input: CreateSchoolInput!) {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -39,6 +40,7 @@ export const updateSchool = `mutation UpdateSchool($input: UpdateSchoolInput!) {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -61,6 +63,7 @@ export const deleteSchool = `mutation DeleteSchool($input: DeleteSchoolInput!) {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -86,6 +89,7 @@ export const createFee = `mutation CreateFee($input: CreateFeeInput!) {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;
@@ -108,6 +112,7 @@ export const updateFee = `mutation UpdateFee($input: UpdateFeeInput!) {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;
@@ -130,6 +135,7 @@ export const deleteFee = `mutation DeleteFee($input: DeleteFeeInput!) {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;

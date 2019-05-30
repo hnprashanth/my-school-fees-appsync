@@ -17,6 +17,7 @@ export const onCreateSchool = `subscription OnCreateSchool {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -39,6 +40,7 @@ export const onUpdateSchool = `subscription OnUpdateSchool {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -61,6 +63,7 @@ export const onDeleteSchool = `subscription OnDeleteSchool {
         annual_fee
         up_votes
         down_votes
+        user_id
       }
       nextToken
     }
@@ -86,6 +89,7 @@ export const onCreateFee = `subscription OnCreateFee {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;
@@ -108,6 +112,7 @@ export const onUpdateFee = `subscription OnUpdateFee {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;
@@ -130,6 +135,7 @@ export const onDeleteFee = `subscription OnDeleteFee {
     annual_fee
     up_votes
     down_votes
+    user_id
   }
 }
 `;
