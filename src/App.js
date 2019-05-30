@@ -5,7 +5,7 @@ import Amplify, { Auth } from "aws-amplify";
 import AWSAppSyncClient, { AUTH_TYPE } from "aws-appsync";
 import gql from "graphql-tag";
 import awsmobile from "./aws-exports";
-import { withOAuth, withAuthenticator } from "aws-amplify-react";
+import { withOAuth } from "aws-amplify-react";
 import Login from "./components/Login";
 import { createFee } from "./graphql/mutations";
 
@@ -58,4 +58,4 @@ function App(props) {
   );
 }
 
-export default withAuthenticator(withOAuth(App));
+export default withOAuth(App);
