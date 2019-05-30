@@ -1,0 +1,25 @@
+type School @model {
+  id: ID!
+  name: String!
+  city: String
+  phone: String
+  email: String
+  address: String
+  locality: String
+  fees: [Fee] @connection(name: "SchoolFees")
+}
+
+type Fee @model {
+  id: ID!
+  school: School @connection(name: "SchoolFees")
+  admission_fee: Float
+  annual_fee: Float
+  up_votes: Int
+  down_votes: Int
+}
+
+type UserVotes @model {
+  user_id: String!
+  fee_id: String!
+  vote: Int
+}
